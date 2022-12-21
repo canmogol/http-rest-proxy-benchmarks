@@ -76,7 +76,8 @@ default ✓ [======================================] 100 VUs  1m0s
      vus............................: 1      min=1       max=100
      vus_max........................: 100    min=100     max=100
 
-can@CENTOS [01:45:12 PM] [/Users/ymor/garb/canmogol]
+
+
 -> % cat out.json| jq -r '.metrics."http_req_duration{expected_response:true}"'
 {
   "p(95)": 6694.852608599997,
