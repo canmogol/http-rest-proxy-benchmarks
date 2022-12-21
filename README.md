@@ -34,16 +34,16 @@ num-reqs
 ```
 
 Number Of Requests
-[![Number Of Requests](files/bench-01.png)]
+![Number Of Requests](files/bench-01.png)
 
 
 Request Statistics
-[![Request Statistics](files/bench-02.png)]
+![Request Statistics](files/bench-02.png)
 
 
 Request Statistics with Ktor
-[![Request Statistics](files/bench-03.png)]
+![Request Statistics](files/bench-03.png)
 
 Request Statistics All of the apps
-[![Request Statistics](files/bench-04.png)]
+![Request Statistics](files/bench-04.png)
 
