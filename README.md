@@ -18,8 +18,7 @@ k6 run --no-usage-report --vus 100 --duration 60s --summary-export out.json scri
 
 Containers under test use 32 MB memory and 0.5 CPU.
 
-Scenarios: (100.00%) 1 scenario, 100 max VUs, 40s max duration (incl. graceful stop):
-* default: 100 looping VUs for 10s (gracefulStop: 30s)
+100 Virtual Users for 60 seconds.
 
 ```
 	Go	Deno	VT      Ktor	bun     SprintBoot  Undertow
