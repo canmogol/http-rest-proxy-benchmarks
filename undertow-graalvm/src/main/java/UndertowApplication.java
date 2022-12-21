@@ -29,7 +29,7 @@ public class UndertowApplication implements HttpHandler {
 
     @Override
     public void handleRequest(HttpServerExchange exchange) throws Exception {
-        final HttpRequest httpRequest = HttpRequest.newBuilder().GET().uri(URI.create("http://192.168.68.118:9090/test.txt")).build();
+        final HttpRequest httpRequest = HttpRequest.newBuilder().GET().uri(URI.create("http://172.17.0.1:9090/test.txt")).build();
         final HttpResponse<String> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
         exchange.getResponseHeaders().put(Headers.CONTENT_TYPE, "text/plain");
         exchange.getResponseSender().send(httpResponse.body().replace("\n", ""));

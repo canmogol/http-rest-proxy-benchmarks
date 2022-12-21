@@ -73,7 +73,7 @@ public class VirtualThreadApplication implements HttpHandler {
 
     private void handleRequest(final HttpExchange exchange) {
         try {
-            final HttpRequest httpRequest = HttpRequest.newBuilder().GET().uri(URI.create("http://192.168.68.118:9090/test.txt")).build();
+            final HttpRequest httpRequest = HttpRequest.newBuilder().GET().uri(URI.create("http://172.17.0.1:9090/test.txt")).build();
             final HttpResponse<String> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
             final String responseMessage = httpResponse.body().replace("\n", "");
             exchange.sendResponseHeaders(200, responseMessage.length());
