@@ -16,6 +16,7 @@ public class VirtualThreadApplication implements HttpHandler {
             .newBuilder()
             .executor(Executors.newVirtualThreadPerTaskExecutor())
             .build();
+    private final HttpRequest httpRequest = HttpRequest.newBuilder().GET().uri(URI.create("http://172.17.0.1:9090/test.txt")).build();
 
     public static void main(String[] args) throws IOException {
         final VirtualThreadApplication application = new VirtualThreadApplication();
@@ -43,7 +44,6 @@ public class VirtualThreadApplication implements HttpHandler {
 
     private void handleRequest(final HttpExchange exchange) {
         try {
-            final HttpRequest httpRequest = HttpRequest.newBuilder().GET().uri(URI.create("http://172.17.0.1:9090/test.txt")).build();
             final HttpResponse<String> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
             final String responseMessage = httpResponse.body().replace("\n", "");
             exchange.sendResponseHeaders(200, responseMessage.length());
