@@ -30,3 +30,5 @@ k6 load test results
   "p(90)": 2800.105697,
   "p(95)": 2812.400944,
 ```
+
+Number of requests `2957`.
