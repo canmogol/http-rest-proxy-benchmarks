@@ -1,4 +1,4 @@
-# Flash Example Application
+# Flask Example Application
 
 Uses Flask internal HTTP server.
 
