@@ -18,6 +18,8 @@ k6 run --no-usage-report --vus 100 --duration 60s --summary-export out.json scri
 
 Containers under test use 32 MB memory and 0.5 CPU.
 
+All the Java and Kotlin applications are compiled to native with GraalVM.
+
 100 Virtual Users for 60 seconds.
 
 ```
