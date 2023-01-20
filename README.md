@@ -23,24 +23,24 @@ All the Java and Kotlin applications are compiled to native with GraalVM.
 100 Virtual Users for 60 seconds.
 
 ```
-	Go	Deno	VT      Ktor	bun     Undertow	PHP - 8.2.1RC1-zts-buster	Spring Reactive 	Spring Web
-avg	315.9	273.3	503.55	1906	exit	2145		323.6				645.9			6828
-min	0.785	5.161	14.125	126.3	exit	13.13		7.573				645.9			0.819
-med	299.1	227.5	505.25	1886	exit	2059		321.1				645.9			2371
-max	1405	1715	1291.5	5557	exit	4611		747.6				645.9			32995
-p90	574	486	705.875	2691.6	exit	2301.5		583.24				645.9			17309
-p95	619 	770	796.395	2992.5	exit	2322.3		655.45				645.9			23081
+	Go	Deno	VT      Ktor	bun     Undertow	PHP - 8.2.1RC1-zts-buster	Spring Reactive 	Spring Web	Spring VT
+avg	315.9	273.3	503.55	1906	exit	2145		323.6				645.9			6828		918.9
+min	0.785	5.161	14.125	126.3	exit	13.13		7.573				645.9			0.819		4.423
+med	299.1	227.5	505.25	1886	exit	2059		321.1				645.9			2371		829.2
+max	1405	1715	1291.5	5557	exit	4611		747.6				645.9			32995		2890
+p90	574	486	705.875	2691.6	exit	2301.5		583.24				645.9			17309		1801.7
+p95	619 	770	796.395	2992.5	exit	2322.3		655.45				645.9			23081		2032.8
 
 num-reqs
-	18980	21964	11929	3200	0       2845		18533				9324			899
+	18980	21964	11929	3200	0       2845		18533				9324			899		6561
 ```
 
 Number Of Requests
-![Number Of Requests](files/bench-01c.png)
+![Number Of Requests](files/bench-01d.png)
 
 
 Request Statistics
-![Request Statistics](files/bench-02c.png)
+![Request Statistics](files/bench-02d.png)
 
 
 Request Statistics with Ktor
